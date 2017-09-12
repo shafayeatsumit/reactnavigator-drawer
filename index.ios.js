@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { StyleSheet, View, AppRegistry } from 'react-native'
 import { Provider } from 'react-redux'
@@ -22,4 +23,3 @@ class ReduxExampleApp extends React.Component {
 AppRegistry.registerComponent('finderios_redux', () => ReduxExampleApp);
 
 export default ReduxExampleApp;
-

@@ -13,6 +13,7 @@ const DrawerStack = DrawerNavigator({
   screen1: { screen: Screen1 },
   screen2: { screen: Screen2 },
   screen3: { screen: Screen3 },
+  loginScreen: { screen: LoginScreen },
 })
 
 const DrawerNavigation = StackNavigator({
@@ -37,13 +38,13 @@ const DrawerNavigation = StackNavigator({
 
 // login stack
 const LoginStack = StackNavigator({
-  loginScreen: { screen: LoginScreen },
-  signupScreen: { screen: SignupScreen },
+  loginScreen: { screen: LoginScreen, navigationOptions: { header : null } },
+  signupScreen: { screen: SignupScreen,navigationOptions: { headerLeft: null } },
   forgottenPasswordScreen: { screen: ForgottenPasswordScreen, navigationOptions: { title: 'Forgot Password' } }
 }, {
   headerMode: 'float',
   navigationOptions: {
-    headerStyle: {backgroundColor: 'red'},
+    headerStyle: {backgroundColor: '#f0f5f9'},
     title: 'You are not logged in'
   }
 })
